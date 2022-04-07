@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Group</title>
+  <meta charset="utf-8">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  <style>
+   input{
+       width: 500px;
+       height: 35px;
+       font-style: italic;
+    
+   }
+  
+   #h21{
+       color: blue;
+
+   }
+   #output
+{
+	padding: 10px; width:80%;background: rgba(255,255,255,0.8);border-radius: 15px;
+}
+#logout{
+    margin-left: 90%;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+  </style>
+</head>
+<body>
+    <div class="container">
+        <button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+ <center>
+     <header>
+         <h1>Building groups</h1><sup></sup>
+         
+     </header>
+     <label id="welcome"></label>
+     <div>
+         <input type="text"   id="inputadd" placeholder="#Create group">
+        <button onclick="addroom()">Create</button>
+         
+     </div>
+     <h2 id="h21">#TrendingRooms</h2>
+     <div id="output">  
+     </div>
+ </center>
+</div>
+<script src="page2.js"></script>
+</body>
+</html>
